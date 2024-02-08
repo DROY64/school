@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="O14-Leonard.html" method="post">
+        <p>
+        <fieldset>
+            <legend>Contactgegevens:</legend>
+            <p>
+                <label>Naam: <input type="text" name="naam" placeholder="Naam" required></label>
+            </p>
+            <p>
+                <label>Leeftijd: <input type="number" name="leeftijd" placeholder="Leeftijd" required
+                        maxlength="3" min="1"></label>
+            </p>
+            <p>
+                <label>E-mail: <input type="email" name="email" placeholder="E-mail" required></label>
+            </p>
+        </fieldset>
+        </p>
+        <p>
+        <fieldset>
+            <legend>Games:</legend>
+            <p>
+                <label>Welke game vind je het leukst?:
+                    <select name="gameleukst" id="gameLeukst" required>
+                        <option value="" disabled selected>selecteer een game</option>
+                        <option value="overwatch">Overwatch</option>
+                        <option value="csgo">Counter Strike: Global Offensive</option>
+                        <option value="cod">Call of Duty</option>
+                        <option value="fifa">Fifa</option>
+                        <option value="f1">F1</option>
+                    </select>
+                </label>
+            </p>
+            <p>Denk je dat je deze game nog een gaat spelen?: <br />
+                <label>
+                    <input type="radio" name="spelen" id="ja" required>Ja
+                </label>
+                <label>
+                    <input type="radio" name="spelen" id="nee">Nee
+                </label>
+                <label>
+                    <input type="radio" name="spelen" id="misschien">Misschien
+                </label>
+            </p>
+            <p>
+                <label>Waarom vond je dit een leuke game?: <br /><textarea name="gameleuke" id="gameLeuke" cols="40"
+                        rows="5" required></textarea></label>
+            </p>
+            <p>
+                <label>Wanneer heb je deze game voor het laatst gespeeld?: <input type="date" name="laatsgespeeld"
+                        id="laatstGespeeld" required></label>
+            </p>
+            <p>
+                <input type="checkbox" name="gamehoogte" id="gameHoogte">
+                <label for="gameHoogte">Ik wil via e-mail op de hoogte gehouden worden
+                    van nieuwe games</label> <br />
+                <input type="submit" value="Recensie versturen">
+
+            </p>
+        </fieldset>
+        </p>
+    </form>
+</body>
+
+</html>
